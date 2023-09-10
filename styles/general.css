@@ -1,0 +1,17 @@
+* {
+  font-family: 'Roboto Slab', Arial;
+  margin: 0;
+  padding: 0;
+  min-width: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffdaf;
+  padding: 60px 60px;
+  transition: padding 0.5s;
+}
+
+body.sidebar-open {
+  padding-left: 200px;
+}
