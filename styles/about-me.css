@@ -1,0 +1,19 @@
+.about-me-page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.about-me-page img{
+  width: 30%;
+  flex-basis: 30%;
+}
+
+.about-me-page .text {
+  flex-basis: 70%;
+}
+
+.about-me-page p {
+  font-size: 16px;
+}

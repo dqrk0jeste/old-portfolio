@@ -17,7 +17,13 @@ main img {
   flex-basis: 30%;
 }
 
-@media (width > 900px){
+@media screen and (width > 700px) {
+  main span {
+    font-size: 38px;
+  }
+}
+
+@media screen and (width > 900px){
   main span {
     font-size: 45px;
   }
