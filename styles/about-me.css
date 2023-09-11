@@ -17,6 +17,7 @@
 
 .about-me-page p {
   font-size: 16px;
+  margin-top: 6px;
 }
 
 @media screen and (width > 820px) {
