@@ -1,5 +1,6 @@
 .my-projects-page {
   margin-top: 50px;
+  max-width: 800px;
 }
 
 .my-projects-page .title {
@@ -16,4 +17,30 @@
 .my-projects-page p {
   margin-left: 20px;
   margin-top: 6px;
+}
+
+.project {
+  margin: 20px 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.project .img-container {
+  border: 2px solid black;
+  flex-basis: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project img {
+  width: 95%;
+  border: 2px solid  black;
+  margin: 5px;
+}
+
+.project p {
+  margin: 6px 0 0 0;
 }
