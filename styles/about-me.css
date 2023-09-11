@@ -1,7 +1,8 @@
 .about-me-page {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  align-items: center;
+  margin-top: 50px;
   gap: 10px;
 }
 
@@ -16,4 +17,14 @@
 
 .about-me-page p {
   font-size: 16px;
+}
+
+@media screen and (width > 820px) {
+  .about-me-page p {
+    font-size: 18px;
+  }
+
+  .about-me-page h1 {
+    font-size: 35px;
+  }
 }
