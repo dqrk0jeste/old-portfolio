@@ -2,13 +2,13 @@ header {
   height: 60px;
   width: calc(100% - 70px);
   position: fixed;
-  z-index: 100;
   top: 0;
   left: 70px;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: transparent;
+  background-color: #fffdaf;
 }
 
 .d, .n,
@@ -22,6 +22,10 @@ header {
 
 .n {
   margin-left: 8px;
+}
+
+body.sidebar-open header {
+  background-color: #fffd8d;
 }
 
 body.sidebar-open .name{
