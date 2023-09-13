@@ -19,6 +19,8 @@
   <link href="/styles/main.css" rel="stylesheet">
   <link href="/styles/about-me.css" rel="stylesheet">
   <link href="/styles/my-projects.css" rel="stylesheet">
+  <link href="/styles/work.css" rel="stylesheet">
+  <link href="/styles/contact.css" rel="stylesheet">
 
   <title>Darko Nikolic</title>
 </head>
@@ -63,10 +65,18 @@
     </div>
   </nav>
   <header>
-    <span class="d">D</span>
-    <span class="name">arko </span>
-    <span class="n">N</span>
-    <span class="surname">ikolic</span>
+    <a href="#">
+      <span class="d">D</span>
+    </a>
+    <a href="#" class="name-container">
+      <span class="name">arko </span>
+    </a>
+    <a href="#" class="n-container">
+      <span class="n">N</span>
+    </a>
+    <a href="#" class="surname-container">
+      <span class="surname">ikolic</span>
+    </a>
     <div class="contact-me-button-container">
       <button class="contact-me-button">contact me</button>
     </div>
@@ -79,7 +89,7 @@
     <img src="/images/mathematics.svg">
     <div class="text">
       <h1>
-        18 years old getting into web development
+        18 year old getting into web development
       </h1>
       <p>
         I have always liked mathematics, physics and, as of recently, I really started enjoying programming. Main reasons for that are the satisfaction I get from solving problems and the constant learning procces - there is always something new to learn.
@@ -96,9 +106,13 @@
     </p>
     <div class="projects-container">
       <div class="project">
-          <img src="/images/cube-timer-image.jpg">
+          <a href="https://dqrk0jeste.github.io/CubeTimer/" class="img-container" target="_blank">
+            <img src="/images/cube-timer-image.jpg">
+          </a>
           <div class="project-desc">
-            <h3>Cube Timer</h3>
+            <a href="https://dqrk0jeste.github.io/CubeTimer/" target="_blank">
+              <h3>Cube Timer</h3>
+            </a>
             <p>Speedcubing is one of my favorite hobbies.
               This is a timer with some basic functionality: generating scrambles, timing you solves and calculating averages. First javascript-heavy project. 
             </p>
@@ -106,6 +120,27 @@
       </div>
     </div>
   </div>
+  <div class="work-page">
+    <h2>Hire me</h2>
+    <p>As of now,  I am still in the learning procces, with very little experiance. I will update this page once I feel like I am ready for my first job.</p>
+  </div>
+  <div class="contact-page">
+    <h2>Contact me</h2>
+    <h4>Your Name</h4>
+    <input type="text" placeholder="...">
+    <h4>Your Email</h4>
+    <input type="text" placeholder="...">
+    <h4>Your message</h4>
+    <textarea rows="10" placeholder=""></textarea>
+  </div>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("L0-NCbualAjZlm8B1");
+    })();
+  </script>
   <script src="/scripts/sidebar-script.js"></script>
 </body>
 </html>

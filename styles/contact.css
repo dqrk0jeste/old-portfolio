@@ -1,0 +1,20 @@
+.contact-page {
+  margin-top: 100px;
+}
+
+.contact-page h2 {
+  margin-left: 15px;
+}
+
+.contact-page h4 {
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.contact-page input {
+  margin-left: 15px;
+}
+
+.contact-page textarea {
+  margin-left: 15px;
+}
