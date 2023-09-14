@@ -20,7 +20,7 @@
   outline: none;
   border-radius: 3px;
   caret-color: #fffdaf;
-  transition: border-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contact-page textarea {
@@ -31,7 +31,7 @@
   width: 100%;
   caret-color: black;
   resize: none;
-  transition: border-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contact-page button {
@@ -48,7 +48,8 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 1s ease;
+  transition: color 1s ease;
 }
 
 .contact-page button:hover {

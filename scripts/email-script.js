@@ -27,7 +27,11 @@ function sendEmail() {
     return;
   }
 
-  document.querySelector('.contact-page button').innerHTML = 'Sending...';
+  const button = document.querySelector('.contact-page button');
+
+  button.innerHTML = 'Sending...';
+  button.style.backgroundColor  = 'black';
+  button.style.color = '#fffc46';
   const serviceID = 'service_7qz0wjj';
   const templateID = 'template_hf2747b';
 
@@ -35,15 +39,15 @@ function sendEmail() {
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
-    document.querySelector('.contact-page button').innerHTML = 'Sent!';
-    document.querySelector('.contact-page button').style.backgroundColor = '#ffb6c1';
+    button.innerHTML = 'Sent!';
+    button.style.backgroundColor = '#fffc46';
+    button.style.color = 'black';
     setTimeout(() => {
-      document.querySelector('.contact-page button').innerHTML = 'Send';
-      document.querySelector('.contact-page button').style.backgroundColor = '#fffc46';
+      button.innerHTML = 'Send';
     }, 1500);
   }).catch((error) => {
     console.log(error);
-    document.querySelector('.contact-page button').innerHTML = 'Try Again';
+    button.innerHTML = 'Try Again';
   });
 
 }
