@@ -7,13 +7,14 @@
 }
 
 html {
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 body {
   background-color: #fffdaf;
   padding: 100px 30px 0px 60px;
   max-width: 1200px;
-  margin: 0 auto 1000px auto;
+  margin: 0 auto 0 auto;
   position: relative;
 }

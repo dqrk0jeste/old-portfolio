@@ -21,8 +21,19 @@
   <link href="/styles/my-projects.css" rel="stylesheet">
   <link href="/styles/work.css" rel="stylesheet">
   <link href="/styles/contact.css" rel="stylesheet">
+  <link href="/styles/footer.css" rel="stylesheet">
 
   <title>Darko Nikolic</title>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("L0-NCbualAjZlm8B1");
+    })();
+  </script>
+
 </head>
 <body>
   <nav class="sidebar js-sidebar">
@@ -33,31 +44,31 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-item">
-        <button class="sidebar-button">
+        <button class="sidebar-button js-home">
           <i class='bx bx-home-alt-2'></i>
           <span>home</span>
         </button>
       </div>
       <div class="sidebar-item">
-        <button class="sidebar-button">
+        <button class="sidebar-button js-about-me">
           <i class='bx bx-info-circle'></i>
           <span>about me</span>
         </button>
       </div>
       <div class="sidebar-item">
-        <button class="sidebar-button">
+        <button class="sidebar-button js-my-projects">
           <i class='bx bx-folder'></i>
           <span>my projects</span>
         </button>
       </div>
       <div class="sidebar-item">
-        <button class="sidebar-button">
+        <button class="sidebar-button js-work" >
           <i class='bx bx-briefcase-alt'></i>
           <span>work</span>
         </button>
       </div>
       <div class="sidebar-item">
-        <button class="sidebar-button">
+        <button class="sidebar-button js-contact">
           <i class='bx bx-message-rounded-dots'></i>
           <span>contact</span>
         </button>
@@ -78,7 +89,7 @@
       <span class="surname">ikolic</span>
     </a>
     <div class="contact-me-button-container">
-      <button class="contact-me-button">contact me</button>
+      <button class="contact-me-button js-contact">contact me</button>
     </div>
   </header>
   <main>
@@ -102,7 +113,11 @@
       <h2>My previous projects</h2>     
     </div>
     <p>
-      Here are some of my previous projects. I will be updating this list constantly. 
+      Here are some of my previous projects. You can also find their source code on my
+      <a href="https://github.com/dqrk0jeste" target="_blank">
+        <span>github</span>
+        <i class='bx bxl-github'></i>
+      </a>. I will be updating this list constantly. 
     </p>
     <div class="projects-container">
       <div class="project">
@@ -127,20 +142,20 @@
   <div class="contact-page">
     <h2>Contact me</h2>
     <h4>Your Name</h4>
-    <input type="text" placeholder="...">
+    <input type="text" placeholder="..." id="name">
     <h4>Your Email</h4>
-    <input type="text" placeholder="...">
+    <input type="text" placeholder="..."id="email">
     <h4>Your message</h4>
-    <textarea rows="10" placeholder=""></textarea>
+    <textarea rows="10" placeholder="" id="message"></textarea>
+    <button>Send</button>
   </div>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function(){
-        emailjs.init("L0-NCbualAjZlm8B1");
-    })();
-  </script>
+  <footer>
+    <p>Darko Nikolic 2023</p>
+    <a href="https://github.com/dqrk0jeste" target="_blank">
+      <i class='bx bxl-github'></i>
+    </a>
+  </footer>
   <script src="/scripts/sidebar-script.js"></script>
+  <script src="/scripts/email-script.js"></script>
 </body>
 </html>

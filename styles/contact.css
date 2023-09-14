@@ -1,20 +1,57 @@
 .contact-page {
   margin-top: 100px;
+  margin-left: 15px;
+  max-width: 600px;
+  position: relative;
 }
 
 .contact-page h2 {
-  margin-left: 15px;
+  margin-bottom: 10px;
 }
-
 .contact-page h4 {
   margin-top: 6px;
-  margin-left: 15px;
 }
 
 .contact-page input {
-  margin-left: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 4px 6px;
+  outline: none;
+  border-radius: 3px;
+  caret-color: #fffdaf;
+  transition: border-color 0.3s ease;
 }
 
 .contact-page textarea {
-  margin-left: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 3px;
+  width: 100%;
+  caret-color: black;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-page button {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  background-color: #fffc46;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-page button:hover {
+  border: 1px solid black;
+  bottom: -51px;
 }

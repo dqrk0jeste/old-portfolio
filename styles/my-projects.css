@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.my-projects-page i {
+.my-projects-page .title i {
   font-size: 50px;
   margin-left: 15px;
 }
@@ -53,3 +53,14 @@
   flex-basis: 60%;
   margin: 6px 0 0 0;
 }
+
+.my-projects-page p > a {
+  color: black;
+  text-decoration: none;
+}
+
+.my-projects-page p span {
+  text-decoration: underline black;
+  text-underline-offset: 5px;
+}
+
