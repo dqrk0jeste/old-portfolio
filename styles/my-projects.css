@@ -20,16 +20,14 @@
 }
 
 .project {
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 15px;
-}
-
-.img-container {
-  flex-basis: 30%;
-  min-width: 170px;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 10px;
 }
 
 .project-desc {
@@ -41,6 +39,11 @@
   text-decoration: none;
   width: fit-content;
   display: inline-block;
+}
+
+.project .img-container {
+  width: 50%;
+  max-width: 180px;
 }
 
 .project img {
@@ -62,5 +65,17 @@
 .my-projects-page p span {
   text-decoration: underline black;
   text-underline-offset: 5px;
+}
+
+@media screen and (width > 550px) {
+  .project {
+    flex-direction: row;
+  }
+
+  .img-container {
+    flex-basis: 30%;
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
