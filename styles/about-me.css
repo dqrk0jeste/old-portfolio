@@ -13,6 +13,7 @@
 .about-me-page .text img {
   flex-basis: 25%;
   width: 25%;
+  min-width: 110px;
 }
 
 .about-me-page .text > div {
