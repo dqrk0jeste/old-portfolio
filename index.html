@@ -7,21 +7,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/sidebar.css" >
-  <link rel="stylesheet" href="styles/header.css" >
-  <link rel="stylesheet" href="styles/main.css" >
-  <link rel="stylesheet"  href="styles/about-me.css" >
-  <link rel="stylesheet" href="styles/my-projects.css" >
-  <link rel="stylesheet"href="styles/work.css" >
-  <link rel="stylesheet" href="styles/contact.css" >
-  <link rel="stylesheet" href="styles/footer.css" >
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/about-me.css">
+  <link rel="stylesheet" href="styles/my-projects.css">
+  <link rel="stylesheet" href="styles/work.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/stack.css">
 
   <title>Darko Nikolic</title>
 
@@ -53,6 +52,12 @@
         <button class="sidebar-button js-about-me">
           <i class='bx bx-info-circle'></i>
           <span>about me</span>
+        </button>
+      </div>
+      <div class="sidebar-item">
+        <button class="sidebar-button js-stack">
+          <i class='bx bx-data'></i>
+          <span>tech stack</span>
         </button>
       </div>
       <div class="sidebar-item">
@@ -94,10 +99,11 @@
   </header>
   <main>
     <h1>Hi! My name is Darko Nikolic and I am a web developer.</h1>
-    <img src="images/main-image-2.svg" alt="">
+    <img class="html-img" src="images/main-image-2.svg" alt="">
+    <img class="arrow" src="images/arrow.svg">
   </main>
-  <div class="about-me-page">
-    <img src="images/mathematics.svg">
+  <section class="about-me-page">
+    <img class="calculator-img" src="images/mathematics.svg">
     <div class="text">
       <div>
         <img src="images/mathematics.svg">
@@ -106,11 +112,27 @@
         </h1>
       </div>
       <p>
-        I have always liked mathematics, physics and, as of recently, I really started enjoying programming. Main reasons for that are the satisfaction I get from solving problems and the constant learning procces - there is always something new to learn.
+        I have always liked mathematics, physics and, as of recently, I really started enjoying programming. Main reasons for that are the satisfaction I get from solving problems and the constant learning procces - there is always something new to learn. (<a href="/about.html">more</a>)
       </p>
     </div>
-  </div>
-  <div class="my-projects-page">
+  </section>
+  <section class="my-stack">
+    <div class="title">
+      <i class='bx bx-data'></i>
+      <h2>My Tech Stack</h2>    
+    </div>
+    <div class="container">
+      <div class="holder">HTML & CSS</div>
+      <div class="holder">JavaScript</div>
+      <div class="holder">NodeJS</div>
+      <div class="holder">MongoDB</div>
+      <div class="holder">C</div>
+      <div class="holder">Java</div>
+      <div class="holder">Python</div>
+    </div>
+    <p>You can find out more <a href="/about.html">here</a></p>
+  </section>
+  <section class="my-projects-page">
     <div class="title">
       <i class='bx bx-folder'></i>
       <h2>My previous projects</h2>     
@@ -120,30 +142,34 @@
       <a href="https://github.com/dqrk0jeste" target="_blank">
         <span>github</span>
         <i class='bx bxl-github'></i>
-      </a>. I will be updating this list constantly. 
+      </a>. I will be updating this list constantly.
     </p>
     <div class="projects-container">
       <div class="project">
-          <a href="https://dqrk0jeste.github.io/CubeTimer/" class="img-container" target="_blank">
-            <img src="images/cube-timer-image.jpg">
+          <a href="https://cube-w-friends.onrender.com/" class="img-container" target="_blank">
+            <img src="images/cube-w-friends-img.jpg">
           </a>
           <div class="project-desc">
-            <a href="https://dqrk0jeste.github.io/CubeTimer/" target="_blank">
-              <h3>Cube Timer</h3>
+            <a href="https://cube-w-friends.onrender.com/" target="_blank">
+              <h3>Cube w/ Friends</h3>
             </a>
-            <p>Speedcubing is one of my favorite hobbies.
-              This is a timer with some basic functionality: generating scrambles, timing you solves and calculating averages. First javascript-heavy project. 
+            <p>(due to free hosting on render.com it will take some time to initially load the site sometimes)<br>This is my first big project, made from scratch using Node.js with Express and Socket.io and MongoDB on backend and Vanilla Javascript on the front. As speedcubing is one of my favorite hobbies I made this web app in order to make it easy for me and others to solve together. It's a real time app with round-based rooms. Each round everyone is given the same cube scramble. After you time your solve you can submit your result, which is then shared with everyone in the same room, in real time, using Web-Sockets. After the round is over, final results are displayed and the next round starts. I intend to continue workig on this app in the future, to implement other features I have in mind, like admin control over the room users, different modes, comparing averages, leaderboards etc.
             </p>
           </div>
       </div>
     </div>
-  </div>
-  <div class="work-page">
-    <h2>Hire me</h2>
-    <p>As of now,  I am still in the learning procces, with very little experiance. I will update this page once I feel like I am ready for my first job.</p>
-  </div>
-  <div class="contact-page">
-    <h2>Contact me</h2>
+  </section>
+  <section class="work-page">
+    <div class="title">
+      <i class='bx bx-briefcase-alt'></i>
+      <h2>Hire me</h2>     
+    </div>
+    <p>
+      I am looking for a job right now. If you like what you see and think I can be a valuable addition to your team, then please contact me using the form below or directly by clicking <a href="mailto:darkonikoloc@gmail.com">here</a>. 
+    </p>
+  </section>
+  <section class="contact-page">
+    <h2>Contact</h2>
     <h4>Your Name</h4>
     <input type="text" placeholder="" id="name">
     <h4>Your Email</h4>
@@ -151,7 +177,7 @@
     <h4>Your message</h4>
     <textarea rows="10" placeholder="" id="message"></textarea>
     <button>Send</button>
-  </div>
+  </section>
   <footer>
     <p>Darko Nikolic 2023</p>
     <a href="https://github.com/dqrk0jeste" target="_blank">

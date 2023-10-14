@@ -1,7 +1,6 @@
 .contact-page {
-  margin-top: 100px;
-  margin-left: 15px;
-  max-width: 600px;
+  margin: 100px auto 0 auto;
+  max-width: 800px;
   position: relative;
 }
 
@@ -19,7 +18,7 @@
   padding: 4px 6px;
   outline: none;
   border-radius: 3px;
-  caret-color: #fffdaf;
+  padding: 6px;
   transition: background-color 0.3s ease;
 }
 
@@ -32,6 +31,8 @@
   caret-color: black;
   resize: none;
   transition: background-color 0.3s ease;
+  outline: none;
+  padding: 6px;
 }
 
 .contact-page button {

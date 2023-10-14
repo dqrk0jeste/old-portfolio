@@ -1,12 +1,22 @@
 .work-page {
-  margin-top: 100px;
-}
-
-.work-page h2 {
-  margin-left: 15px;
+  max-width: 800px;
+  margin: 100px auto 0 auto;
 }
 
 .work-page p {
   margin-top: 6px;
-  margin-left: 15px;;
+}
+
+.work-page .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.work-page .title i {
+  font-size: 50px;
+}
+
+.work-page a {
+  color: black;
 }

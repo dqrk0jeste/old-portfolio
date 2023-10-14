@@ -15,6 +15,10 @@ document.querySelector('.js-about-me').addEventListener('click', () => {
   scrollTo('.about-me-page');
   document.body.classList.remove('sidebar-open');
 });
+document.querySelector('.js-stack').addEventListener('click', () => {
+  scrollTo('.my-stack');
+  document.body.classList.remove('sidebar-open');
+});
 document.querySelector('.js-my-projects').addEventListener('click', () => {
   scrollTo('.my-projects-page');
   document.body.classList.remove('sidebar-open');
