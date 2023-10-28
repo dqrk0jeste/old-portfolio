@@ -2,11 +2,25 @@
   margin: 100px auto 0 auto;
   max-width: 800px;
   position: relative;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .contact-page h2 {
   margin-bottom: 10px;
 }
+
+
+.contact-page .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-page .title i {
+  font-size: 50px;
+}
+
 .contact-page h4 {
   margin-top: 6px;
 }

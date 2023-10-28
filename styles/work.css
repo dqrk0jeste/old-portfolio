@@ -1,6 +1,8 @@
 .work-page {
   max-width: 800px;
   margin: 100px auto 0 auto;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .work-page p {

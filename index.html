@@ -124,6 +124,7 @@
     <div class="container">
       <div class="holder">HTML & CSS</div>
       <div class="holder">JavaScript</div>
+      <div class="holder">VueJS</div>
       <div class="holder">NodeJS</div>
       <div class="holder">MongoDB</div>
       <div class="holder">C</div>
@@ -153,10 +154,27 @@
             <a href="https://cube-w-friends.onrender.com/" target="_blank">
               <h3>Cube w/ Friends</h3>
             </a>
-            <p>(due to free hosting on render.com it will take some time to initially load the site sometimes)<br>This is my first big project, made from scratch using Node.js with Express and Socket.io and MongoDB on backend and Vanilla Javascript on the front. As speedcubing is one of my favorite hobbies I made this web app in order to make it easy for me and others to solve together. It's a real time app with round-based rooms. Each round everyone is given the same cube scramble. After you time your solve you can submit your result, which is then shared with everyone in the same room, in real time, using Web-Sockets. After the round is over, final results are displayed and the next round starts. I intend to continue workig on this app in the future, to implement other features I have in mind, like admin control over the room users, different modes, comparing averages, leaderboards etc.
+            <p>
+              (due to free hosting on render.com it will take some time to initially load the site sometimes)<br>
+              This is my first big project, made from scratch using Node.js (Express and Socket.io) and MongoDB on backend and Vanilla JavaScript on the front. As speedcubing is one of my favorite hobbies I made this web app in order to make it easy for me and others to solve together. It's a real time app with round-based rooms. Each round everyone is given the same cube scramble. After you time your solve you can submit your result, which is then shared with everyone in the same room, in real time, using Web Sockets. After the round is over, final results are displayed and the next round starts. I intend to continue working on this app in the future, to implement other features I have in mind, like admin control over the room users, different modes, comparing averages, leaderboards etc.
             </p>
           </div>
       </div>
+      <div class="project">
+        <a href="https://dqrk0jeste.github.io/blog/" class="img-container" target="_blank">
+          <img src="images/blog-img.jpg">
+        </a>
+        <div class="project-desc">
+          <a href="https://dqrk0jeste.github.io/blog/" target="_blank">
+            <h3>blog.</h3>
+          </a>
+          <p>
+            (due to free hosting on render.com it will take some time to initially load posts sometimes)<br>
+            I have learned VueJS and wanted to put it to the test and also wanted to exeriment a bit more with the design
+            and made something I truly think looks pretty. Working with VueJS has been a blessing. It makes everything so much easier than it used to be with plain JavaScript. Backend is again NodeJS with Express and MongoDB for saving user data and posts. You can read others posts or make your own blog. Some thing are still missing, like searching and user profiles, which I will implement in the near future.
+          </p>
+        </div>
+    </div>
     </div>
   </section>
   <section class="work-page">
@@ -169,7 +187,10 @@
     </p>
   </section>
   <section class="contact-page">
-    <h2>Contact</h2>
+    <div class="title">
+      <i class='bx bx-message-rounded-dots'></i>
+      <h2>Contact</h2>     
+    </div>
     <h4>Your Name</h4>
     <input type="text" placeholder="" id="name">
     <h4>Your Email</h4>
@@ -186,5 +207,6 @@
   </footer>
   <script src="scripts/sidebar-script.js"></script>
   <script src="scripts/email-script.js"></script>
+  <script src="scripts/animations.js"></script>
 </body>
 </html>

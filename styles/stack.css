@@ -1,6 +1,8 @@
 .my-stack {
   max-width: 800px;
   margin: 100px auto 0 auto;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .my-stack .title {
@@ -17,7 +19,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 10px;
   margin-left: 4px;
   margin-top: 5px;
 }

@@ -5,6 +5,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 footer i {

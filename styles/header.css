@@ -65,11 +65,7 @@ body.sidebar-open header {
 }
 
 .contact-me-button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.contact-me-button:active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #fffc46;
 }
 
 @media screen and (width > 500px) {
